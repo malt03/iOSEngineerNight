@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CcK-HX-rcD">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4ai-MP-Tad">
+            <objects>
+                <viewController id="CcK-HX-rcD" customClass="ViewController" customModule="iOSEngineerNight" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xfq-xv-3vh"/>
+                        <viewControllerLayoutGuide type="bottom" id="7TY-Iq-Swx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eGI-Bm-dur">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDa-mW-OAe">
+                                <rect key="frame" x="277" y="285" width="46" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btn"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="push" destination="CcK-HX-rcD" eventType="touchUpInside" id="K2W-Bj-aNk"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="drR-OD-q5H">
+                                <rect key="frame" x="20" y="323" width="560" height="2"/>
+                                <accessibility key="accessibilityConfiguration" identifier="prg"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uDa-mW-OAe" firstAttribute="centerX" secondItem="eGI-Bm-dur" secondAttribute="centerX" id="1Oz-qj-JyS"/>
+                            <constraint firstAttribute="trailing" secondItem="drR-OD-q5H" secondAttribute="trailing" constant="20" id="LPO-wy-xa1"/>
+                            <constraint firstItem="drR-OD-q5H" firstAttribute="top" secondItem="uDa-mW-OAe" secondAttribute="bottom" constant="8" id="PF3-Dh-hqf"/>
+                            <constraint firstItem="drR-OD-q5H" firstAttribute="leading" secondItem="eGI-Bm-dur" secondAttribute="leading" constant="20" id="c3l-fE-cj9"/>
+                            <constraint firstItem="uDa-mW-OAe" firstAttribute="centerY" secondItem="eGI-Bm-dur" secondAttribute="centerY" id="hTE-kH-4sS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="drR-OD-q5H" id="eIi-XI-qQC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kI4-0l-8C2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="614" y="544"/>
+        </scene>
+    </scenes>
+</document>
